@@ -11,7 +11,7 @@ st.set_page_config(
 )
 
 # --- Carregamento dos dados ---
-df = pd.read_csv("J:\Alura\imersao_dados_2025\salarios_area_dados.csv")
+df = pd.read_csv("https://github.com/danilosmod/analise-salario-dados/blob/main/salarios_area_dados.csv?raw=true")
 
 
 # --- Barra Lateral (Filtros) ---
@@ -136,4 +136,5 @@ with col_graf4:
 
 # --- Tabela de Dados Detalhados ---
 st.subheader("Dados Detalhados")
+
 st.dataframe(df_filtrado)
